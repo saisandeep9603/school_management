@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'schools/principal_index.css' %}">
+    <title>PrincipalIndex</title>
+</head>
+
+<body>
+    <div class="bg_container p-4">
+        <h1 class="main_heading">{{ school_name }} SCHOOL</h1>
+        <div class="d-flex flex-row justify-content-between mt-4">
+            <div class="image_container">
+                <a href="{% url 'staff_details' %}"><img src="https://res.cloudinary.com/dicmzdrqm/image/upload/v1682327784/existing-employees-2_fey794.png" class="image" /></a>
+                <h1 class="imge_text">STAFF INFO</h1>
+            </div>
+            <div class="image_container">
+                <a  href="{% url 'add_staff' %}"><img src="https://res.cloudinary.com/dicmzdrqm/image/upload/v1682327599/th_spbnfw.png" class="image" /></a>
+                <h1 class="imge_text">ADD STAFF</h1>
+              </div>
+             <div class="image_container">
+                <a  href="{% url 'remove_staff' %}" ><img src="https://res.cloudinary.com/dicmzdrqm/image/upload/v1682326526/remove-user-vector-illustration-flat-600w-2160912977_c2whwg.webp" class="image" /></a>
+                <h1 class="imge_text">Remove STAFF</h1>
+              </div>
+             </div>
+
+             <div class="d-flex flex-row justify-content-between mt-3">
+            <div class="image_container">
+                <a  href="{% url 'students_details' %}" ><img src="https://res.cloudinary.com/dicmzdrqm/image/upload/v1682327607/wp4385886_njres9.png" class="image" /></a>
+                <h1 class="imge_text">STUDENT INFO</h1>
+            </div>
+            <div class="image_container">
+               <a  href="{% url 'student_details_by_class' %}">  <img src="https://res.cloudinary.com/dicmzdrqm/image/upload/v1682326004/ivan-aleksic-PDRFeeDniCk-unsplash_e9ra0a.jpg" class="image" /></a>
+                <h1 class="imge_text">FILTER BY CLASS</h1>
+            </div>
+           
+            <div class="image_container">
+                 <a  href="{% url 'my_page' %}"><img src="https://res.cloudinary.com/dicmzdrqm/image/upload/v1682326684/desktop-wallpaper-red-certificate-template-png-certificate_cqwhzp.jpg" class="image" /></a>
+                <h1 class="imge_text">BONAFIDE</h1>
+            </div>
+         </div>
+         <div class="d-flex flex-row justify-content-between mt-3">
+         <div class="image_container ">
+                 <a  href="{% url 'student_add' %}"><img src="https://res.cloudinary.com/dwr2oubuu/image/upload/v1682438226/school_e1vb10.webp" class="image"/></a>
+                 <h1 class="imge_text">ADD STUDENT</h1>
+        </div>
+        <div class="image_container ">
+                 <a  href="{% url 'notice_form' %}"><img src="https://res.cloudinary.com/dwr2oubuu/image/upload/v1682537763/notices_e1queq.webp" class="image"/></a>
+                 <h1 class="imge_text">POST NOTICE</h1>
+        </div>
+        </div>
+        
+       
+
+    </div>
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
